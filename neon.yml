@@ -42,7 +42,7 @@ highlights:
   Identifier: "blue"
   Function: "yellow"
   Statement: "blue"
-  Conditional: "orange"
+  Conditional: "orange - i"
   Repeat: "blue"
   Label: "cyan"
   Operator: "blue"
@@ -142,7 +142,7 @@ highlights:
   TSProperty: "cyan"
   TSConstructor: "red"
   # Keywords
-  TSConditional: "orange"
+  TSConditional: "orange - i"
   TSRepeat: "blue"
   TSLabel: "cyan"
   # Does not work for yield and return they should be diff then class and def
