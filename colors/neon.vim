@@ -13,7 +13,7 @@ hi Constant guifg=#c678dd ctermfg=176 guibg=NONE ctermbg=NONE gui=NONE cterm=NON
 hi String guifg=#a0c980 ctermfg=150 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Character guifg=#da8548 ctermfg=173 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Number guifg=#ec7279 ctermfg=204 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Boolean guifg=#da8548 ctermfg=173 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Boolean guifg=#da8548 ctermfg=173 guibg=NONE ctermbg=NONE gui=italic cterm=italic
 hi Float guifg=#ec7279 ctermfg=204 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Identifier guifg=#51afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Function guifg=#ecbe7b ctermfg=216 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -96,7 +96,7 @@ hi TSString guifg=#a0c980 ctermfg=150 guibg=NONE ctermbg=NONE gui=NONE cterm=NON
 hi TSStringEscape guifg=#da8548 ctermfg=173 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSCharacter guifg=#da8548 ctermfg=173 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSNumber guifg=#ec7279 ctermfg=204 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi TSBoolean guifg=#da8548 ctermfg=173 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi TSBoolean guifg=#da8548 ctermfg=173 guibg=NONE ctermbg=NONE gui=italic cterm=italic
 hi TSFloat guifg=#ec7279 ctermfg=204 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSAnnotation guifg=#ecbe7b ctermfg=216 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSAttribute guifg=#46d9ff ctermfg=81 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
