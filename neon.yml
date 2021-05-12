@@ -133,7 +133,7 @@ highlights:
   TSNamespace: "cyan"
   # Functions
   TSFuncBuiltin: "yellow"
-  TSFunction: "blue"
+  TSFunction: "dark_cyan"
   TSFuncMacro: "yellow"
   TSParameter: "fg"
   TSParameterReference: "fg"
