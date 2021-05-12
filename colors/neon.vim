@@ -18,7 +18,7 @@ hi Float guifg=#ec7279 ctermfg=204 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Identifier guifg=#51afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Function guifg=#ecbe7b ctermfg=216 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Statement guifg=#51afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Conditional guifg=#da8548 ctermfg=173 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Conditional guifg=#da8548 ctermfg=173 guibg=NONE ctermbg=NONE gui=italic cterm=italic
 hi Repeat guifg=#51afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Label guifg=#46d9ff ctermfg=81 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Operator guifg=#51afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -110,7 +110,7 @@ hi TSMethod guifg=#ecbe7b ctermfg=216 guibg=NONE ctermbg=NONE gui=NONE cterm=NON
 hi TSField guifg=#ec7279 ctermfg=204 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSProperty guifg=#46d9ff ctermfg=81 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSConstructor guifg=#ec7279 ctermfg=204 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi TSConditional guifg=#da8548 ctermfg=173 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi TSConditional guifg=#da8548 ctermfg=173 guibg=NONE ctermbg=NONE gui=italic cterm=italic
 hi TSRepeat guifg=#51afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSLabel guifg=#46d9ff ctermfg=81 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi TSKeyword guifg=#51afef ctermfg=75 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
