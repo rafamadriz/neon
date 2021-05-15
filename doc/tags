@@ -1,0 +1,15 @@
+doom-one	neon.txt	/*doom-one*
+neon	neon.txt	/*neon*
+neon-configuration	neon.txt	/*neon-configuration*
+neon-contents	neon.txt	/*neon-contents*
+neon-faq	neon.txt	/*neon-faq*
+neon-introduction	neon.txt	/*neon-introduction*
+neon-usage	neon.txt	/*neon-usage*
+neon.txt	neon.txt	/*neon.txt*
+vim.g.neon_bold	neon.txt	/*vim.g.neon_bold*
+vim.g.neon_italic_boolean	neon.txt	/*vim.g.neon_italic_boolean*
+vim.g.neon_italic_comment	neon.txt	/*vim.g.neon_italic_comment*
+vim.g.neon_italic_function	neon.txt	/*vim.g.neon_italic_function*
+vim.g.neon_italic_keyword	neon.txt	/*vim.g.neon_italic_keyword*
+vim.g.neon_italic_variable	neon.txt	/*vim.g.neon_italic_variable*
+vim.g.neon_style	neon.txt	/*vim.g.neon_style*

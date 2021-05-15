@@ -1,0 +1,205 @@
+*neon.txt*
+
+CONTENTS                                     *neon-contents*
+
+Introduction                                 |neon-introduction|
+Installation                                 |neon-installation|
+Usage                                        |neon-usage|
+Configuration                                |neon-configuration|
+FAQ                                          |neon-faq|
+
+==============================================================================
+INTRODUCTION                                                 *neon-introduction*
+
+Customizable coloscheme with dark and light options, vivid colors and easy on the eye.
+Inspired by the awesome *doom-one* colorscheme for emacs.
+
+Features~
+
+- Customizable.
+- Made to work with treesitter.
+- Support for some of the most popular plugins.
+- Designed to have a soft contrast for eye protection.
+- Multiple options to enable italic text.
+- Bold support.
+
+==============================================================================
+INSTALLATION                                                 *neon*
+
+Via Plugin Manager~
+
+    Use your favorite plugin manager. Example [packer](https://github.com/wbthomason/packer.nvim):
+>
+        use "rafamadriz/neon"
+<
+    Make sure to have [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) installed.
+
+==============================================================================
+USAGE                                                               *neon-usage*
+
+Neovim~
+
+    To set the theme you can use the following.
+>
+        vim.cmd[[colorscheme neon]]
+<
+    Or if your config is in VimScript use:
+>
+        colorscheme neon
+<
+    See |neon-configuration| for more configuration options.
+
+    If you want to apply this color scheme temporarily, run this command in
+    vim(this may cause broken colors):
+>
+        :colorscheme neon
+<
+------------------------------------------------------------------------------
+
+Lualine~
+
+    To enable [lualine](https://github.com/hoob3rt/lualine.nvim) color
+    scheme, put this somewhere in your config:
+>
+        require('lualine').setup {
+          options = {
+            -- ... your lualine config
+            theme = 'neon'
+            -- ... your lualine config
+          }
+        }
+<
+==============================================================================
+
+CONFIGURATION                                               *neon-configuration*
+
+Note: the configuration options should be placed before `vim.cmd[[colorscheme neon]]`
+
+E.g.
+>
+        vim.g.neon_style = "default"
+        vim.g.neon_italic_keyword = true
+        vim.g.neon_italic_function = true
+
+        vim.cmd[[colorscheme neon]]
+<
+------------------------------------------------------------------------------
+                                                                  *vim.g.neon_style*
+vim.g.neon_style~
+
+The style of this color scheme.
+
+        Available values: `"default"`, `"dark"`, `"light"`
+        Default value: `'default'`
+
+E.g.
+>
+        vim.g.neon_style = 'dark'
+<
+------------------------------------------------------------------------------
+                                                 *vim.g.neon_italic_comment*
+vim.g.neon_italic_comment~
+
+By default, italic is enabled in `Comment`. To disable italic in `Comment`, set
+this option to `false`.
+
+E.g.
+>
+        vim.g.neon_italic_comment = false
+<
+------------------------------------------------------------------------------
+                                                          *vim.g.neon_italic_keyword*
+vim.g.neon_italic_keyword~
+
+This applies to conditionals and keywords like `for`, `do`, `while`, `loops` etc.
+
+        Available values: `true`, `false`
+        Default value: `false`
+
+E.g.
+>
+        vim.g.neon_italic_keyword = true
+<
+Note: All of the italic options are designed to use with fonts that support cursive italics.
+See |neon-faq| for more information.
+
+------------------------------------------------------------------------------
+                                                          *vim.g.neon_italic_boolean*
+vim.g.neon_italic_boolean~
+
+This applies to `true` and `false`.
+
+        Available values: `true`, `false`
+        Default value: `false`
+
+E.g.
+>
+        vim.g.neon_italic_boolean = true
+<
+
+------------------------------------------------------------------------------
+                                                          *vim.g.neon_italic_function*
+vim.g.neon_italic_function~
+
+This applies to function (calls and definitions), method (calls and definitions) and
+built-in functions.
+
+        Available values: `true`, `false`
+        Default value: `false`
+
+E.g.
+>
+        vim.g.neon_italic_function = true
+<
+------------------------------------------------------------------------------
+                                                          *vim.g.neon_italic_variable*
+vim.g.neon_italic_variable~
+
+This applies to variable names that are defined by the languages, like `this` or `self`.
+And any variable name that does not have another highlight.
+
+        Available values: `true`, `false`
+        Default value: `false`
+
+E.g.
+>
+        vim.g.neon_italic_variable = true
+<
+------------------------------------------------------------------------------
+                                                          *vim.g.neon_bold*
+vim.g.neon_bold~
+
+        Available values: `true`, `false`
+        Default value: `false`
+
+E.g.
+>
+        vim.g.neon_bold = true
+<
+==============================================================================
+FAQ                                                                   *neon-faq*
+
+It doesn't work as expected.~
+
+1. This color scheme is mainly designed for true colors and treesitter, make sure of setting `vim.o.termguicolors = true`
+and installing [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
+
+2. Maybe your terminal emulator doesn't support true colors, you can test it
+using [this script](https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern).
+
+3. If you are running vim in tmux, you need to override default true colors of
+tmux, as tmux cannot display true colors properly:
+[#1246 How to use true colors in vim under tmux?](https://github.com/tmux/tmux/issues/1246)
+
+------------------------------------------------------------------------------
+
+How to enable cursive italic keywords?~
+
+1. Install a font that supports italics, for example [JetBrains-NerdFont](https://www.nerdfonts.com/font-downloads).
+
+2. Set the correct italic font for the your terminal of choice.
+
+3. Enable italic in Neovim. E.g. `vim.g.neon_italic_keyword = true`
+
+==============================================================================
+vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:et:sw=4:fen:fdm=marker:fmr={{{,}}}:
