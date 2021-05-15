@@ -47,7 +47,7 @@ local function set_groups()
         IncSearch = {bg = c.gray, style = "reverse"},
         LineNr = {fg = c.disabled},
         CursorLineNr = {fg = c.cyan},
-        MatchParen = {style = "undercurl"},
+        MatchParen = {fg = c.red, style = "underline,bold"},
         ModeMsg = {fg = c.cyan, style = cfg.bold},
         MoreMsg = {fg = c.cyan, style = cfg.bold},
         NonText = {fg = c.bg2},
