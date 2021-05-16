@@ -156,7 +156,7 @@ E.g.
 vim.g.neon_italic_variable~
 
 This applies to variable names that are defined by the languages, like `this` or `self`.
-And any variable name that does not have another highlight.
+And any variable name that does not have another highlight group.
 
         Available values: `true`, `false`
         Default value: `false`
@@ -181,15 +181,14 @@ FAQ                                                                   *neon-faq*
 
 It doesn't work as expected.~
 
-1. This color scheme is mainly designed for true colors and treesitter, make sure of setting `vim.o.termguicolors = true`
-and installing [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
+1. This color scheme is mainly designed for true colors, make sure of setting:
+`vim.o.termguicolors = true`
 
-2. Maybe your terminal emulator doesn't support true colors, you can test it
-using [this script](https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern).
+2. To test if your terminal supports true colors, use the following
+[script](https://gist.github.com/XVilka/8346728).
 
-3. If you are running vim in tmux, you need to override default true colors of
-tmux, as tmux cannot display true colors properly:
-[#1246 How to use true colors in vim under tmux?](https://github.com/tmux/tmux/issues/1246)
+3. This colorscheme is made to look good with treesitter, if you don't have it,
+it won't look the same as the screenshoots.
 
 ------------------------------------------------------------------------------
 
@@ -197,9 +196,9 @@ How to enable cursive italic keywords?~
 
 1. Install a font that supports italics, for example [JetBrains-NerdFont](https://www.nerdfonts.com/font-downloads).
 
-2. Set the correct italic font for the your terminal of choice.
+2. Set the correct italic font for your terminal of choice.
 
-3. Enable italic in Neovim. E.g. `vim.g.neon_italic_keyword = true`
+3. Enable italic text. E.g. `vim.g.neon_italic_keyword = true`
 
 ==============================================================================
 vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:et:sw=4:fen:fdm=marker:fmr={{{,}}}:
