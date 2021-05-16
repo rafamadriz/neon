@@ -31,7 +31,7 @@ local function set_groups()
         Normal = {fg = c.fg, bg = c.bg0}, -- normal text and background color
         SignColumn = {fg = c.fg, bg = c.bg0},
         EndOfBuffer = {fg = c.bg0}, -- ~ lines at the end of a buffer
-        NormalFloat = {fg = c.fg, bg = c.bg0}, -- normal text and background color for floating windows
+        NormalFloat = {fg = c.fg, bg = c.bg2}, -- normal text and background color for floating windows
         ColorColumn = {fg = c.none, bg = c.fg}, --  used for the columns set with 'colorcolumn'
         Conceal = {fg = c.gray}, -- placeholder characters substituted for concealed text (see 'conceallevel')
         Cursor = {fg = c.cyan, bg = c.none, style = "reverse"}, -- the character under the cursor
@@ -52,13 +52,13 @@ local function set_groups()
         MoreMsg = {fg = c.cyan, style = cfg.bold},
         NonText = {fg = c.bg2},
         Pmenu = {fg = c.fg, bg = c.bg4},
-        PmenuSel = {fg = c.bg0, bg = c.blue},
+        PmenuSel = {fg = c.bg0, bg = c.blue, style = "bold"},
         PmenuSbar = {fg = c.fg, bg = c.bg2},
         PmenuThumb = {fg = c.fg, bg = c.gray},
         Question = {fg = c.green, style = cfg.bold},
-        QuickFixLine = {fg = c.fg, c.gray, style = "reverse"},
-        qfLineNr = {fg = c.fg, c.gray, style = "reverse"},
-        Search = {bg = c.bg4, style = "reverse"},
+        QuickFixLine = {fg = c.blue, bg = c.bg1, style = "bold,italic"},
+        qfLineNr = {fg = c.blue, bg = c.bg1},
+        Search = {bg = c.bg4},
         SpecialKey = {fg = c.bg3},
         SpellBad = {fg = c.red, bg = c.none, style = "italic,undercurl"},
         SpellCap = {fg = c.blue, bg = c.none, style = "italic,undercurl"},
@@ -204,8 +204,8 @@ local function set_groups()
         TSParameterReference = {fg = c.fg}, -- For references to parameters of a function.
         TSProperty = {fg = c.violet}, -- Same as `TSField`.
         TSPunctDelimiter = {fg = c.fg}, -- For delimiters ie: `.`
-        TSPunctBracket = {fg = c.fg}, -- For brackets and parens.
-        TSPunctSpecial = {fg = c.fg}, -- For special punctutation that does not fall in the catagories before.
+        TSPunctBracket = {fg = c.purple}, -- For brackets and parens.
+        TSPunctSpecial = {fg = c.yellow}, -- For special punctutation that does not fall in the catagories before.
         TSString = {fg = c.green}, -- For strings.
         TSStringRegex = {fg = c.blue}, -- For regexes.
         TSStringEscape = {fg = c.orange}, -- For escape characters within a string.
@@ -226,22 +226,22 @@ local function set_groups()
         -- Lsp highlight groups
         LspDiagnosticsDefaultError = {fg = c.red}, -- used for "Error" diagnostic virtual text
         LspDiagnosticsSignError = {fg = c.red}, -- used for "Error" diagnostic signs in sign column
-        LspDiagnosticsFloatingError = {fg = c.red}, -- used for "Error" diagnostic messages in the diagnostics float
+        LspDiagnosticsFloatingError = {fg = c.red, style = "bold"}, -- used for "Error" diagnostic messages in the diagnostics float
         LspDiagnosticsVirtualTextError = {fg = c.red, style = cfg.bold}, -- Virtual text "Error"
         LspDiagnosticsUnderlineError = {fg = c.red, style = "undercurl", sp = c.red}, -- used to underline "Error" diagnostics.
         LspDiagnosticsDefaultWarning = {fg = c.orange}, -- used for "Warning" diagnostic signs in sign column
         LspDiagnosticsSignWarning = {fg = c.orange}, -- used for "Warning" diagnostic signs in sign column
-        LspDiagnosticsFloatingWarning = {fg = c.orange}, -- used for "Warning" diagnostic messages in the diagnostics float
+        LspDiagnosticsFloatingWarning = {fg = c.orange, style = "bold"}, -- used for "Warning" diagnostic messages in the diagnostics float
         LspDiagnosticsVirtualTextWarning = {fg = c.orange, style = cfg.bold}, -- Virtual text "Warning"
         LspDiagnosticsUnderlineWarning = {fg = c.orange, style = "undercurl", sp = c.orange}, -- used to underline "Warning" diagnostics.
         LspDiagnosticsDefaultInformation = {fg = c.blue}, -- used for "Information" diagnostic virtual text
         LspDiagnosticsSignInformation = {fg = c.blue}, -- used for "Information" diagnostic signs in sign column
-        LspDiagnosticsFloatingInformation = {fg = c.blue}, -- used for "Information" diagnostic messages in the diagnostics float
+        LspDiagnosticsFloatingInformation = {fg = c.blue, style = "bold"}, -- used for "Information" diagnostic messages in the diagnostics float
         LspDiagnosticsVirtualTextInformation = {fg = c.blue, style = cfg.bold}, -- Virtual text "Information"
         LspDiagnosticsUnderlineInformation = {fg = c.blue, style = "undercurl", sp = c.blue}, -- used to underline "Information" diagnostics.
         LspDiagnosticsDefaultHint = {fg = c.cyan}, -- used for "Hint" diagnostic virtual text
         LspDiagnosticsSignHint = {fg = c.cyan}, -- used for "Hint" diagnostic signs in sign column
-        LspDiagnosticsFloatingHint = {fg = c.cyan}, -- used for "Hint" diagnostic messages in the diagnostics float
+        LspDiagnosticsFloatingHint = {fg = c.cyan, style = "bold"}, -- used for "Hint" diagnostic messages in the diagnostics float
         LspDiagnosticsVirtualTextHint = {fg = c.cyan, style = cfg.bold}, -- Virtual text "Hint"
         LspDiagnosticsUnderlineHint = {fg = c.cyan, style = "undercurl", sp = c.blue}, -- used to underline "Hint" diagnostics.
         LspReferenceText = {fg = c.fg, bg = c.purple}, -- used for highlighting "text" references
