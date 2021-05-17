@@ -12,7 +12,7 @@ FAQ                                          |neon-faq|
 INTRODUCTION                                                 *neon-introduction*
 
 Customizable coloscheme with dark and light options, vivid colors and easy on the eye.
-Inspired by the awesome *doom-one* colorscheme for emacs.
+Inspired by the awesome *doom-one* colorscheme from emacs.
 
 Features~
 
