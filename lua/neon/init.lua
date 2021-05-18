@@ -50,7 +50,7 @@ local function set_groups()
         MatchParen = {fg = c.red, style = "underline,bold"},
         ModeMsg = {fg = c.cyan, style = cfg.bold},
         MoreMsg = {fg = c.cyan, style = cfg.bold},
-        NonText = {fg = c.bg3},
+        NonText = {fg = c.bg2},
         Pmenu = {fg = c.fg, bg = c.bg4},
         PmenuSel = {fg = c.bg0, bg = c.blue, style = "bold"},
         PmenuSbar = {fg = c.fg, bg = c.bg2},
