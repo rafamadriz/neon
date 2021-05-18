@@ -29,7 +29,9 @@ The Ultimate Theme 🪐
 
 ## Requirements
 
-- Neovim >= 5.0
+- [Neovim](https://github.com/neovim/neovim) >= 5.0
+
+> NOTE: doesn't support [Vim](https://github.com/vim/vim), it uses lua.
 
 ## 📦 Installation
 
