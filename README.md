@@ -106,7 +106,9 @@ It doesn't work as expected.
 
 ### How to enable cursive italic keywords?
 
-1. Install a font that supports italics, for example [JetBrains-NerdFont](https://www.nerdfonts.com/font-downloads) is an excellent font.
+1. Install a font that supports italics, for example
+   [JetBrains-NerdFont](https://www.nerdfonts.com/font-downloads) is an
+   excellent font.
 
 2. Set the correct italic font for your terminal of choice.
 
