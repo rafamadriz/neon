@@ -30,7 +30,7 @@ local function set_groups()
         -- Editor highlight groups
         Normal = {fg = c.fg, bg = c.bg0}, -- normal text and background color
         SignColumn = {fg = c.fg, bg = c.bg0},
-        EndOfBuffer = {fg = c.bg0}, -- ~ lines at the end of a buffer
+        EndOfBuffer = {fg = c.disabled}, -- ~ lines at the end of a buffer
         NormalFloat = {fg = c.fg, bg = c.bg2}, -- normal text and background color for floating windows
         ColorColumn = {fg = c.none, bg = c.fg}, --  used for the columns set with 'colorcolumn'
         Conceal = {fg = c.gray}, -- placeholder characters substituted for concealed text (see 'conceallevel')
@@ -50,7 +50,7 @@ local function set_groups()
         MatchParen = {fg = c.red, style = "underline,bold"},
         ModeMsg = {fg = c.cyan, style = cfg.bold},
         MoreMsg = {fg = c.cyan, style = cfg.bold},
-        NonText = {fg = c.bg2},
+        NonText = {fg = c.bg3},
         Pmenu = {fg = c.fg, bg = c.bg4},
         PmenuSel = {fg = c.bg0, bg = c.blue, style = "bold"},
         PmenuSbar = {fg = c.fg, bg = c.bg2},
@@ -69,7 +69,7 @@ local function set_groups()
         StatusLineTerm = {fg = c.fg, bg = c.bg3},
         StatusLineTermNC = {fg = c.fg, bg = c.bg3},
         TabLineFill = {fg = c.fg},
-        TablineSel = {fg = c.fg, bg = c.bg4},
+        TablineSel = {fg = c.bg0, bg = c.blue},
         Tabline = {fg = c.gray},
         Title = {fg = c.cyan, bg = c.none, style = cfg.bold},
         Visual = {fg = c.none, bg = c.bg4},
