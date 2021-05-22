@@ -21,20 +21,27 @@ local colors = {
 }
 
 function colors.generate()
-    if vim.g.neon_style == "dark" then
-        colors.fg = "#c5cdd9"
-        colors.bg0 = "#0d1117"
-        colors.bg1 = "#161b22"
-        colors.bg2 = "#21262d"
-        colors.bg3 = "#333644"
-        colors.bg4 = "#363a49"
-    elseif vim.g.neon_style == "default" or vim.g.neon_style == "" then
+    if vim.g.neon_style == "default" or vim.g.neon_style == "" then
         colors.fg = "#c5cdd9"
         colors.bg0 = "#2b2d37"
         colors.bg1 = "#333644"
         colors.bg2 = "#363a49"
         colors.bg3 = "#3a3e4e"
         colors.bg4 = "#404455"
+    elseif vim.g.neon_style == "doom" then
+        colors.fg = "#bbc2cf"
+        colors.bg0 = "#282c34"
+        colors.bg1 = "#202328"
+        colors.bg2 = "#1c1f24"
+        colors.bg3 = "#282c34"
+        colors.bg4 = "#23272e"
+    elseif vim.g.neon_style == "dark" then
+        colors.fg = "#c5cdd9"
+        colors.bg0 = "#0d1117"
+        colors.bg1 = "#161b22"
+        colors.bg2 = "#21262d"
+        colors.bg3 = "#333644"
+        colors.bg4 = "#363a49"
     elseif vim.g.neon_style == "light" then
         colors.fg = "#4C566A"
         colors.bg0 = "#d3d3d3"

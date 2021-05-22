@@ -173,7 +173,7 @@ local function set_groups()
         DashboardCenter = {fg = c.blue},
         DashboardFooter = {fg = c.green, style = "italic"},
         -- TreeSitter highlight groups
-        TSComment = {fg = c.gray, bg = c.none, style = cfg.italic_comment}, -- For comment blocks.
+        TSComment = {fg = c.disabled, bg = c.none, style = cfg.italic_comment}, -- For comment blocks.
         TSConditional = {fg = c.light_blue, style = cfg.italic_keyword}, -- For keywords related to conditionnals.
         TSKeyword = {fg = c.blue, style = cfg.italic_keyword}, -- For keywords that don't fall in previous categories.
         TSAnnotation = {fg = orange}, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
@@ -371,7 +371,7 @@ local function set_groups()
         SneakScope = {bg = c.bg4},
         -- Indent Blankline
         IndentBlanklineChar = {fg = c.gray_alt},
-        IndentBlanklineContextChar = {fg = c.bg3},
+        IndentBlanklineContextChar = {fg = c.disabled},
         -- Nvim dap
         DapBreakpoint = {fg = c.red},
         DapStopped = {fg = c.green},
