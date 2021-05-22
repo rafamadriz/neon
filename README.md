@@ -80,7 +80,7 @@ require('lualine').setup {
 
 | Option                 | Default   | Description                                                                                                                                           |
 | ---------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `neon_style`           | "default" | There's three options to choose from, `default`, `dark` and `light`                                                                                   |
+| `neon_style`           | "default" | There's three options to choose from, `default`, `doom`, `dark` and `light`                                                                                   |
 | `neon_italic_comment`  | true      | Italic text for comments                                                                                                                              |
 | `neon_italic_keyword`  | false     | Applies to conditionals and keywords like `for`, `do`, `while`, `loops` etc.                                                                          |
 | `neon_italic_boolean ` | false     | `true` and `false`                                                                                                                                    |
