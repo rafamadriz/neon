@@ -7,15 +7,20 @@ The Ultimate Theme 🪐
 
 ### Default
 
-![2021-May-16](https://user-images.githubusercontent.com/67771985/118411852-3ec67b00-b686-11eb-84f5-7e56949bb21d.png)
+![2021-May-22_2](https://user-images.githubusercontent.com/67771985/119240962-e9d1ab80-bb42-11eb-9d25-37f2b6e9362a.png)
+
+### Doom
+
+![2021-May-22_1](https://user-images.githubusercontent.com/67771985/119240973-f7873100-bb42-11eb-946a-5a824f54f6fb.png)
 
 ### Dark
 
-![2021-May-16_1](https://user-images.githubusercontent.com/67771985/118411893-7e8d6280-b686-11eb-8726-3e3802a0ba25.png)
+![2021-May-22_3](https://user-images.githubusercontent.com/67771985/119240994-12f23c00-bb43-11eb-96f3-3f9c1e1644a8.png)
+
 
 ### Light
 
-![2021-May-16_2](https://user-images.githubusercontent.com/67771985/118411903-8d741500-b686-11eb-8f87-a9c4857bd8b0.png)
+![2021-May-22_4](https://user-images.githubusercontent.com/67771985/119241001-17b6f000-bb43-11eb-94c8-ef43c4f65d1f.png)
 
 ## ✨ Features
 
