@@ -33,7 +33,7 @@ function colors.generate()
         colors.bg0 = "#282c34"
         colors.bg1 = "#202328"
         colors.bg2 = "#1c1f24"
-        colors.bg3 = "#282c34"
+        colors.bg3 = "#3f444a"
         colors.bg4 = "#23272e"
     elseif vim.g.neon_style == "dark" then
         colors.fg = "#c5cdd9"
