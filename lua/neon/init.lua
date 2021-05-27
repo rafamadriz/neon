@@ -32,7 +32,7 @@ local function set_groups()
         SignColumn = {fg = c.fg, bg = c.bg0},
         EndOfBuffer = {fg = c.disabled}, -- ~ lines at the end of a buffer
         NormalFloat = {fg = c.fg, bg = c.bg2}, -- normal text and background color for floating windows
-        ColorColumn = {fg = c.none, bg = c.fg}, --  used for the columns set with 'colorcolumn'
+        ColorColumn = {fg = c.none, bg = c.bg3}, --  used for the columns set with 'colorcolumn'
         Conceal = {fg = c.gray}, -- placeholder characters substituted for concealed text (see 'conceallevel')
         Cursor = {fg = c.cyan, bg = c.none, style = "reverse"}, -- the character under the cursor
         CursorIM = {fg = c.cyan, bg = c.none, style = "reverse"}, -- like Cursor, but used when in IME mode
@@ -316,7 +316,7 @@ local function set_groups()
         NvimTreeImageFile = {fg = c.purple},
         NvimTreeExecFile = {fg = c.green},
         NvimTreeSpecialFile = {fg = c.yellow, style = "underline"},
-        NvimTreeFolderName = {fg = c.blue},
+        NvimTreeFolderName = {fg = c.purple},
         NvimTreeEmptyFolderName = {fg = c.gray},
         NvimTreeFolderIcon = {fg = c.blue},
         NvimTreeIndentMarker = {fg = c.gray},
