@@ -95,7 +95,7 @@ local function set_groups()
         StorageClass = {fg = c.cyan}, -- static, register, volatile, etc.
         Structure = {fg = c.orange}, -- struct, union, enum, etc.
         Constant = {fg = c.violet}, -- any constant
-        Comment = {fg = c.disabled, bg = c.none, style = cfg.italic_comment},
+        Comment = {fg = c.gray, bg = c.none, style = cfg.italic_comment},
         Conditional = {fg = c.blue, bg = c.none, style = cfg.italic_keyword}, -- italic if, then, else, endif, switch, etc.
         Keyword = {fg = c.blue, bg = c.none, style = cfg.italic_keyword}, -- italic for, do, while, etc.
         Repeat = {fg = c.orange, bg = c.none, style = cfg.italic_keyword}, -- italic any other keyword
@@ -173,7 +173,7 @@ local function set_groups()
         DashboardCenter = {fg = c.blue},
         DashboardFooter = {fg = c.green, style = "italic"},
         -- TreeSitter highlight groups
-        TSComment = {fg = c.disabled, bg = c.none, style = cfg.italic_comment}, -- For comment blocks.
+        TSComment = {fg = c.gray, bg = c.none, style = cfg.italic_comment}, -- For comment blocks.
         TSConditional = {fg = c.light_blue, style = cfg.italic_keyword}, -- For keywords related to conditionnals.
         TSKeyword = {fg = c.blue, style = cfg.italic_keyword}, -- For keywords that don't fall in previous categories.
         TSAnnotation = {fg = orange}, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
@@ -265,8 +265,8 @@ local function set_groups()
         NeogitBranch = {fg = c.gray_alt},
         NeogitRemote = {fg = c.purple},
         NeogitHunkHeader = {fg = c.fg, bg = c.cyan},
-        NeogitHunkHeaderHighlight = {fg = c.blue, bg = c.bg1},
-        NeogitDiffContextHighlight = {fg = c.bg4, bg = c.bg1},
+        NeogitHunkHeaderHighlight = {fg = c.blue},
+        NeogitDiffContextHighlight = {fg = c.fg},
         NeogitDiffDeleteHighlight = {fg = c.red},
         NeogitDiffAddHighlight = {fg = c.green},
         -- GitGutter
