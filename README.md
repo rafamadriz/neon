@@ -87,6 +87,7 @@ require('lualine').setup {
 | `neon_italic_function` | false     | Applies to function (calls and definitions), method (calls and definitions) and built-in functions.                                                   |
 | `neon_italic_variable` | false     | Applies to variable names that are defined by the languages, like `this` or `self`. And any variable name that does not have another highlight group. |
 | `neon_bold`            | false     | Applies to error and warning messages, functions (calls and definitions), lsp virtual text, etc.                                                      |
+| `neon_transparent`     | false     | Applies no background color to certain highlight groups.                                                                                      |
 
 #### Example config:
 
@@ -94,6 +95,7 @@ require('lualine').setup {
 vim.g.neon_style = "default"
 vim.g.neon_italic_keyword = true
 vim.g.neon_italic_function = true
+vim.g.neon_transparent = true
 
 vim.cmd[[colorscheme neon]]
 ```

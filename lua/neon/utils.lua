@@ -8,4 +8,11 @@ function utils.highlight(group, color)
     vim.api.nvim_command("highlight " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp)
 end
 
+function utils.tobool(val)
+    if val == 0 or not val then
+        return false
+    end
+    return true
+end
+
 return utils
