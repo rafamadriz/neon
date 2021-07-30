@@ -24,11 +24,18 @@ local function set_terminal_colors()
     vim.g.terminal_color_foreground = c.fg
 end
 
+local function set_transparent(color)
+    if not utils.tobool(vim.g.neon_transparent) then
+        return color
+    end
+    return c.none
+end
+
 local function set_groups()
     local groups = {
         -- Base
         -- Editor highlight groups
-        Normal = {fg = c.fg, bg = c.bg0}, -- normal text and background color
+        Normal = {fg = c.fg, bg = set_transparent(c.bg0) }, -- normal text and background color
         SignColumn = {fg = c.fg, bg = c.bg0},
         EndOfBuffer = {fg = c.disabled}, -- ~ lines at the end of a buffer
         NormalFloat = {fg = c.fg, bg = c.bg2}, -- normal text and background color for floating windows
@@ -78,7 +85,7 @@ local function set_groups()
         WarningMsg = {fg = c.orange, style = cfg.bold},
         WildMenu = {fg = c.bg0, bg = c.blue, style = "bold"},
         CursorColumn = {fg = c.none, bg = c.fg},
-        CursorLine = {fg = c.none, bg = c.bg1},
+        CursorLine = {fg = c.none, bg = set_transparent(c.bg1)},
         ToolbarLine = {fg = c.fg, bg = c.bg1},
         ToolbarButton = {fg = c.fg, bg = c.none, style = "bold"},
         NormalMode = {fg = c.cyan, bg = c.none, style = "reverse"},
@@ -311,7 +318,7 @@ local function set_groups()
         NERDTreeToggleOff = {fg = c.red},
         -- NvimTree
         NvimTreeRootFolder = {fg = c.cyan, style = "italic"},
-        NvimTreeNormal = {fg = c.fg, bg = c.bg0},
+        NvimTreeNormal = {fg = c.fg, bg = set_transparent(c.bg0)},
         NvimTreeGitDirty = {fg = c.diff_yellow},
         NvimTreeGitNew = {fg = c.green},
         NvimTreeImageFile = {fg = c.purple},

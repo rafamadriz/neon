@@ -80,6 +80,7 @@ E.g.
         vim.g.neon_style = "default"
         vim.g.neon_italic_keyword = true
         vim.g.neon_italic_function = true
+        vim.g.neon_transparent = true
 
         vim.cmd[[colorscheme neon]]
 <
@@ -176,7 +177,21 @@ E.g.
 >
         vim.g.neon_bold = true
 <
-==============================================================================
+------------------------------------------------------------------------------
+                                                          *vim.g.neon_transparent*
+vim.g.neon_transparent~
+
+This will leave certain highlight groups unset, allowing a background image to
+show.
+
+        Available values: `true`, `false`
+        Default value: `false`
+
+E.g.
+>
+        vim.g.neon_transparent = true
+<
+===============================================================================
 FAQ                                                                   *neon-faq*
 
 It doesn't work as expected.~

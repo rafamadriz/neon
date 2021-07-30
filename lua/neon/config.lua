@@ -1,3 +1,5 @@
+local tobool = require('neon.utils').tobool
+
 local settings = {
     style = "default",
     italic_comment = true,
@@ -22,13 +24,6 @@ for k, val in pairs(settings) do
     if vim.g[key] == nil then
         vim.g[key] = val
     end
-end
-
-local function tobool(val)
-    if val == 0 or not val then
-        return false
-    end
-    return true
 end
 
 -- style check
