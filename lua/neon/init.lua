@@ -85,7 +85,7 @@ local function set_groups()
         WarningMsg = {fg = c.orange, style = cfg.bold},
         WildMenu = {fg = c.bg0, bg = c.blue, style = "bold"},
         CursorColumn = {fg = c.none, bg = c.fg},
-        CursorLine = {fg = c.none, bg = set_transparent(c.bg1), style=set_transparent(nil, "underline")},
+        CursorLine = {fg = c.none, bg = set_transparent(c.bg1), style = set_transparent(nil, "underline")},
         ToolbarLine = {fg = c.fg, bg = c.bg1},
         ToolbarButton = {fg = c.fg, bg = c.none, style = "bold"},
         NormalMode = {fg = c.cyan, bg = c.none, style = "reverse"},
