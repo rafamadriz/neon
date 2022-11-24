@@ -24,11 +24,11 @@ local function set_terminal_colors()
     vim.g.terminal_color_foreground = c.fg
 end
 
-local function set_transparent(color)
+local function set_transparent(color, optional_color)
     if not utils.tobool(vim.g.neon_transparent) then
         return color
     end
-    return c.none
+    return optional_color or c.none
 end
 
 local function set_groups()
@@ -85,7 +85,7 @@ local function set_groups()
         WarningMsg = {fg = c.orange, style = cfg.bold},
         WildMenu = {fg = c.bg0, bg = c.blue, style = "bold"},
         CursorColumn = {fg = c.none, bg = c.fg},
-        CursorLine = {fg = c.none, bg = set_transparent(c.bg1)},
+        CursorLine = {fg = c.none, bg = set_transparent(c.bg1), style = set_transparent(nil, "underline")},
         ToolbarLine = {fg = c.fg, bg = c.bg1},
         ToolbarButton = {fg = c.fg, bg = c.none, style = "bold"},
         NormalMode = {fg = c.cyan, bg = c.none, style = "reverse"},
