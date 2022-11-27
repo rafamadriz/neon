@@ -36,7 +36,7 @@ local function set_groups()
         -- Base
         -- Editor highlight groups
         Normal = {fg = c.fg, bg = set_transparent(c.bg0) }, -- normal text and background color
-        SignColumn = {fg = c.fg, bg = c.bg0},
+        SignColumn = {fg = c.fg, bg = set_transparent(c.bg0)},
         EndOfBuffer = {fg = c.disabled}, -- ~ lines at the end of a buffer
         NormalFloat = {fg = c.fg, bg = c.bg2}, -- normal text and background color for floating windows
         FloatBorder = {fg = c.blue, bg = c.bg2},
